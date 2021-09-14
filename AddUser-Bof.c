@@ -51,7 +51,7 @@ void go(char * args, int len) {
         &dwError
         );
     if(nStatus == NERR_Success){
-        BeaconPrintf(CALLBACK_OUTPUT, "User %s has been successfully added", username);
+        BeaconPrintf(CALLBACK_OUTPUT, "User %ls has been successfully added", username);
     }else{
         BeaconPrintf(CALLBACK_OUTPUT, "User added error %d", nStatus);
     }
